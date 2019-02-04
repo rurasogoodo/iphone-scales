@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iphone_scales" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKH-Qe-eFd" userLabel="Gramm label">
+                                <rect key="frame" x="31" y="600" width="313" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="% force" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijb-tj-jwh" userLabel="Force Label">
+                                <rect key="frame" x="100" y="563" width="175" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="170" id="RtR-wZ-ruz"/>
+                                    <constraint firstAttribute="height" constant="29" id="n8l-5W-iTL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iFX-lG-XaV" customClass="ScaleView" customModule="iphone_scales" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="129" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="Fmw-Rj-eqz"/>
+                                    <constraint firstAttribute="height" constant="375" id="ibH-tw-FXH"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Положите предмет для взвешивания в центр круга" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gza-xC-f0e">
+                                <rect key="frame" x="10" y="66" width="355" height="55"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KvB-NG-95A" firstAttribute="bottom" secondItem="TKH-Qe-eFd" secondAttribute="bottom" constant="46" id="3s9-hO-hsY"/>
+                            <constraint firstItem="TKH-Qe-eFd" firstAttribute="leading" secondItem="KvB-NG-95A" secondAttribute="leading" constant="31" id="7A1-6J-h3A"/>
+                            <constraint firstItem="Gza-xC-f0e" firstAttribute="top" secondItem="KvB-NG-95A" secondAttribute="top" constant="46" id="8vI-2p-pML"/>
+                            <constraint firstItem="iFX-lG-XaV" firstAttribute="trailing" secondItem="KvB-NG-95A" secondAttribute="trailing" id="9Ma-nV-D3m"/>
+                            <constraint firstItem="Ijb-tj-jwh" firstAttribute="top" secondItem="iFX-lG-XaV" secondAttribute="bottom" constant="59" id="9NK-7G-StH"/>
+                            <constraint firstItem="KvB-NG-95A" firstAttribute="trailing" secondItem="TKH-Qe-eFd" secondAttribute="trailing" constant="31" id="Ia2-o7-S1C"/>
+                            <constraint firstItem="iFX-lG-XaV" firstAttribute="leading" secondItem="KvB-NG-95A" secondAttribute="leading" id="LZP-xc-GUS"/>
+                            <constraint firstItem="Ijb-tj-jwh" firstAttribute="top" secondItem="iFX-lG-XaV" secondAttribute="bottom" constant="59" id="Mnr-kf-Thr"/>
+                            <constraint firstItem="iFX-lG-XaV" firstAttribute="leading" secondItem="KvB-NG-95A" secondAttribute="leading" id="T03-K3-VHc"/>
+                            <constraint firstItem="Ijb-tj-jwh" firstAttribute="leading" secondItem="KvB-NG-95A" secondAttribute="leading" constant="100" id="bPH-dJ-hwB"/>
+                            <constraint firstItem="KvB-NG-95A" firstAttribute="trailing" secondItem="Ijb-tj-jwh" secondAttribute="trailing" constant="100" id="boN-Qx-DBH"/>
+                            <constraint firstItem="iFX-lG-XaV" firstAttribute="top" secondItem="Gza-xC-f0e" secondAttribute="bottom" constant="8" id="h4D-Rt-eQ9"/>
+                            <constraint firstItem="iFX-lG-XaV" firstAttribute="top" secondItem="KvB-NG-95A" secondAttribute="top" constant="109" id="hJ5-R4-WIb"/>
+                            <constraint firstItem="KvB-NG-95A" firstAttribute="trailing" secondItem="Gza-xC-f0e" secondAttribute="trailing" constant="10" id="itS-2R-UVZ"/>
+                            <constraint firstItem="Gza-xC-f0e" firstAttribute="leading" secondItem="KvB-NG-95A" secondAttribute="leading" constant="10" id="kTD-ZU-ixw"/>
+                            <constraint firstItem="TKH-Qe-eFd" firstAttribute="top" secondItem="Ijb-tj-jwh" secondAttribute="bottom" constant="8" id="v1r-UD-unq"/>
+                            <constraint firstItem="iFX-lG-XaV" firstAttribute="trailing" secondItem="KvB-NG-95A" secondAttribute="trailing" id="xuv-SK-qJF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KvB-NG-95A"/>
+                    </view>
+                    <connections>
+                        <outlet property="forceLabel" destination="Ijb-tj-jwh" id="dtL-91-Enz"/>
+                        <outlet property="grammLabel" destination="TKH-Qe-eFd" id="Knw-ER-neQ"/>
+                        <outlet property="scaleView" destination="iFX-lG-XaV" id="9RJ-US-AmR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="26.53673163418291"/>
+        </scene>
+    </scenes>
+</document>
